@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="#ddd">
+
+    <com.yashoid.openpainting.WorldView
+        android:id="@+id/world"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/toggle_mode"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="24dp"
+
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:background="@drawable/toggle_background"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_palette"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="left|bottom"
+        android:layout_margin="24dp"
+
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:background="@drawable/toggle_background"
+        app:srcCompat="@drawable/ic_palette"/>
+
+</FrameLayout>
